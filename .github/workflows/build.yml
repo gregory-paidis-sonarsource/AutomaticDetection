@@ -1,0 +1,11 @@
+name: Echo Environment Variables
+
+on: [push, pul_request]
+
+jobs:
+  echo_env_vars:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Echo Variables
+        run: |
+          echo "Base Branch --> $GITHUB_BASE_REF"
