@@ -8,4 +8,6 @@ jobs:
     steps:
       - name: Echo Variables
         run: |
-          echo "Base Branch --> $GITHUB_BASE_REF"
+          echo "Source Branch   --> $GITHUB_HEAD_REF"
+          echo "Target Branch   --> $GITHUB_BASE_REF"
+          echo "Pull Request Id --> $GITHUB_REF"
